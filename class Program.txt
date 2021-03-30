@@ -1,0 +1,31 @@
+class Program
+{
+public static void Main(string[] args)
+{
+try
+{
+int d = 0;
+if(args.Length == 0)
+{
+d = Convert.ToInt32(Console.ReadLine());
+}
+else
+{
+d = Convert.ToInt32(args[0]);
+}
+if(d>0)
+{
+Console.WriteLine("Число положительное");
+}
+else if(d<0)
+{
+Console.WriteLine("Число отрицательное");
+}
+else
+{
+Console.WriteLine("Число равно нулю");
+}
+}
+catch(Exception e) { Console.WriteLine(e.Message); }
+}
+}

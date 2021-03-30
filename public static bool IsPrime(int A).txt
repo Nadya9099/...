@@ -1,0 +1,7 @@
+public static bool IsPrime(int A)
+{
+for(int i=2;i<Math.Sqrt(A)+1;i++)
+if ((A % i) == 0) return false;
+return true;
+
+}
